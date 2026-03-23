@@ -1,0 +1,128 @@
+.Container {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* background: ; */
+}
+
+.Div-Form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 12px;
+    border-radius: 12px;
+    background: linear-gradient(160deg, #3B82F6, #2563EB, #3B82F6);
+    width: 42%;
+    height: auto;
+    box-shadow: 1px 1.5px 5px rgba(0, 0, 0, 0.7);
+}
+
+form {
+    height: 100%;
+    width: 100%;
+    padding: 12px;
+}
+
+fieldset {
+    padding: 12px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    border: 3px solid white;
+}
+
+legend {
+    font-size: 1.5rem;
+    font-weight: 900;
+    letter-spacing: 2px;
+}
+
+.Box-Entrada,
+.Box-btns {
+    padding: 12px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: start;
+    flex-wrap: wrap;
+    gap: 8px;
+    width: 100%;
+}
+
+.Box-Entrada span {
+    color: red;
+}
+
+label {
+    font-size: 1.1rem;
+    font-weight: 500;
+}
+
+.Box-Entrada>input {
+    padding: 4px 6px;
+    border-radius: 8px;
+    letter-spacing: 1.5px;
+    font-size: 0.9rem;
+    background-color: rgba(0, 0, 0, 0.02);
+    border-bottom: 0.6px solid silver;
+    transition: transform 0.7s ease;
+}
+
+input::placeholder {
+    color: #888;
+    font-style: italic;
+    font-size: 0.8rem
+}
+
+input[type="date"],
+#Sexo,
+#Sexo option {
+    border-radius: 8px;
+    background-color: rgba(0, 0, 0, 0.3);
+    padding: 2px;
+    letter-spacing: 1.5px;
+    font-size: 0.8rem;
+    color: rgba(0, 0, 0, 0.7);
+    font-weight: 700;
+}
+
+.Box-btns {
+    gap: 18px;
+}
+
+.btn {
+    letter-spacing: 1.2px;
+    font-size: 1.05rem;
+    font-weight: bold;
+    border-radius: 8px;
+    padding: 0.6rem 1.3rem;
+    transition: all 0.7s ease;
+}
+
+#btn-Cad {
+    background-color: #90EE90;
+}
+
+#btn-Voltar {
+    background-color: #87CEFA;
+}
+
+#btn-Resetar {
+    background-color: #FFFACD;
+}
+
+/* Ao passar o mouse */
+.Box-btns>button:hover,
+.Box-btns>input:hover {
+    transform: scale(1.07);
+    cursor: pointer;
+    color: rgba(0, 0, 0, 0.7);
+}
+
+.Box-Entrada>input:hover {
+    transform: scale(1.03);
+}
