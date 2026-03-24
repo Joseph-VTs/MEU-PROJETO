@@ -1,0 +1,15 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "start-live-server",
+      "type": "shell",
+      "command": "npx live-server --port=5500 --no-browser",
+      "problemMatcher": []
+    }
+  ]
+}
+
+// npx live-server → roda o Live Server sem precisar abrir manualmente.
+// --port=5500 → define a porta (pode mudar se quiser).
+// --no-browser → evita abrir navegador externo, já que você está no Codespaces.

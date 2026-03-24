@@ -1,0 +1,13 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Abrir no Live Server (Codespaces)",
+      "type": "chrome",
+      "request": "launch",
+      "url": "http://localhost:5500/index.html",
+      "webRoot": "${workspaceFolder}",
+      "preLaunchTask": "start-live-server"
+    }
+  ]
+}
