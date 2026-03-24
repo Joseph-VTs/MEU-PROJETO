@@ -77,10 +77,11 @@ body.fade-out {
                     gap: 22px;
                 }
 
-                /* Botões */
+                /* Botões do Form*/
                 .Box-Buttons {
 
                     button {
+                        margin: 0 4px;
 
                         a:hover {
                             transform: scale(1.05);
@@ -89,11 +90,13 @@ body.fade-out {
                         }
                     }
 
-                    button:nth-child(1) {
+                    button:nth-child(2) {
+                        padding: 6px 20px;
                         color: white;
                     }
 
-                    button:nth-child(2) {
+                    button:nth-child(1) {
+                        padding: 4px 20px;
 
                         a {
                             color: var(--Cor-Detalhes2);

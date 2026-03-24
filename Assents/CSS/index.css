@@ -122,14 +122,16 @@ body.fade-out {
                     }
                 }
 
-                button:nth-child(1) {
+                button:nth-child(2) {
+                    padding: 6px 20px;
 
                     a {
                         color: white;
                     }
                 }
 
-                button:nth-child(2) {
+                button:nth-child(1) {
+                    padding: 6px 20px;
 
                     a {
                         color: var(--Cor-Detalhes2);

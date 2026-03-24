@@ -3,16 +3,19 @@
     padding: 0;
     box-sizing: border-box;
 
-    /* Padrão */
+    /* Fontes */
+    font-size: 1rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+    /* Padrão pq gosto assim*/
     outline: none;
     border: none;
     list-style: none;
     text-decoration: none;
     cursor: default;
-    font-size: 1rem;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
+/* Cores Padrão */
 :root {
     --Cor-Detalhes: #9da8fd;
     --Cor-Detalhes2: #4f5dfe;
@@ -29,6 +32,7 @@
     background-size: cover;
 }
 
+/* Layout das Entradas / Inputs */
 .Box-Entrada {
     width: 100%;
     background-color: white;
@@ -70,7 +74,12 @@
     border-left: 10px solid var(--Cor-Detalhes2);
 }
 
+/* Layout dos Botões */
 .Box-Buttons {
+    display: flex;
+    flex-direction: row;
+    align-items: start;
+    justify-content: start;
 
     button {
         border: 3px solid var(--Cor-Detalhes2);
@@ -87,13 +96,11 @@
         }
     }
 
-    button:nth-child(1) {
-        padding: 6px 20px;
+    button:nth-child(2) {
         background-color: var(--Cor-Detalhes2);
     }
 
-    button:nth-child(2) {
-        padding: 6px 16px;
+    button:nth-child(1) {
         background-color: white;
     }
 
