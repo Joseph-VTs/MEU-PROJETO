@@ -1,0 +1,184 @@
+html,
+body {
+    overflow: hidden;
+}
+
+body {
+    transition: opacity 0.4s ease, transform 0.4s ease;
+}
+
+/* estado inicial invisível (entrada) */
+body.preload {
+    opacity: 0;
+    transform: translateX(50px);
+}
+
+/* estado carregando (aparece suavemente) */
+body.loaded {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+/* estado de saída (desaparece suavemente) */
+body.fade-out {
+    opacity: 0;
+    transform: translateX(-50px);
+}
+
+
+
+.Container {
+    background-image: url('../IMGs/Entrada.jpg');
+
+    .Div-LE {
+        height: 70%;
+        width: 50%;
+        background-color: white;
+        border-radius: 22px 0px 0px 22px;
+
+        .Div-img-Login {
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+            border-radius: 22px 0px 0px 22px;
+
+            img {
+                width: 100%;
+                height: 100%;
+                transition: opacity 0.5s ease;
+            }
+        }
+    }
+
+    .Div-LD {
+        height: 70%;
+        padding: 40px;
+        width: 28%;
+        background-color: white;
+        display: grid;
+        grid-template-rows: 2fr 6fr 1fr;
+        border-radius: 0px 22px 22px 0px;
+
+        header {
+
+            h2 {
+                font-family: Verdana, Geneva, Tahoma, sans-serif;
+                font-weight: 700;
+                font-size: 1.6rem;
+                color: var(--Cor-Detalhes2);
+            }
+        }
+
+        .Div-Body {
+            width: 100%;
+            height: 100%;
+            display: grid;
+            grid-template-rows: 4fr 2fr 4fr;
+
+            div:nth-child(1) {
+                display: flex;
+                flex-direction: column;
+                align-items: start;
+                justify-content: start;
+                width: 100%;
+            }
+
+            .Box-Esqueceu {
+                width: 100%;
+                display: flex;
+                flex-direction: row;
+                align-items: start;
+                justify-content: end;
+
+                a {
+                    text-align: right;
+
+                    p {
+                        font-size: 0.85rem;
+                        font-weight: 600;
+                        color: var(--Cor-Detalhes);
+                        transition: all 0.5s ease;
+                        transform: scale(0.97);
+                        opacity: 0.9;
+                        letter-spacing: 1.4px;
+                    }
+
+                    p:hover {
+                        transform: scale(1);
+                        opacity: 1;
+                        cursor: pointer;
+                    }
+                }
+            }
+
+            .Box-Buttons {
+
+                button {
+
+                    a:hover {
+                        transform: scale(1.05);
+                        opacity: 0.97;
+                        cursor: pointer;
+                    }
+                }
+
+                button:nth-child(1) {
+
+                    a {
+                        color: white;
+                    }
+                }
+
+                button:nth-child(2) {
+
+                    a {
+                        color: var(--Cor-Detalhes2);
+                    }
+                }
+            }
+        }
+
+        footer {
+            background-color: transparent;
+            width: 100%;
+            height: 100%;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: start;
+            gap: 12px;
+
+            div:nth-child(1) {
+                padding: 4px;
+
+                p {
+                    color: var(--Cor-Detalhes);
+                    font-weight: 700;
+                }
+            }
+
+            div:nth-child(2) {
+                padding: 4px;
+                width: 36%;
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                justify-content: space-around;
+
+                a {
+                    background-color: transparent;
+
+                    i {
+                        font-size: 1.2rem;
+                        transition: transform 0.4s ease;
+                    }
+
+                    i:hover {
+                        transform: scale(1.06);
+                        cursor: pointer;
+                    }
+                }
+            }
+        }
+    }
+}

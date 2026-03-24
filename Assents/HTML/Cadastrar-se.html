@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastrar-se</title>
+
+    <!-- Estilos CSS -->
+    <link rel="stylesheet" href="../CSS/Cadastrar-se.css">
+    <link rel="stylesheet" href="../CSS/PGs-Default.css">
+</head>
+
+<body class="preload">
+    <div class="Container">
+        <div class="Div-Form">
+            <form method="post" action="">
+                <fieldset>
+                    <legend>
+                        <h2>Formulário de Cadastro do Usuário</h2>
+                    </legend>
+
+                    <div class="Box-Entrada">
+                        <label for="Nome-User">Nome Completo <b style="color: red;">*</b></label>
+                        <input type="text" name="Nome-User" placeholder="Vinícius" maxlength="50" required>
+                    </div>
+
+                    <div class="Box-Entrada">
+                        <label for="Email-User">E-Mail <b style="color: red;">*</b></label>
+                        <input type="email" name="Email-User" placeholder="email@gmail.com" required>
+                    </div>
+
+                    <div class="Box-Entrada">
+                        <label for="Cell-User">Telefone <b style="color: red;">*</b></label>
+                        <input type="tel" name="Cell-User" placeholder="+55 51 9.0000-0000" required>
+                    </div>
+
+                    <div class="Box-Entrada">
+                        <label for="Sexo-User">Sexo <b style="color: red;">*</b></label>
+
+                        <div class="Box-Select">
+                            <input type="radio" name="Sexo-Masculino" value="Masculino">
+                            <label for="Sexo-Masculino">Masculino</label>
+                        </div>
+
+                        <div class="Box-Select">
+                            <input type="radio" name="Sexo-Feminino" value="Feminino">
+                            <label for="Sexo-Feminino">Feminino</label>
+                        </div>
+                    </div>
+
+                    <div class="Box-Entrada">
+                        <label for="DataNasc-User">Data de Nascimento <b style="color: red;">*</b></label>
+                        <input type="date" name="DataNasc-User" required>
+                    </div>
+
+                    <div class="Box-Entrada">
+                        <label for="City-User">Cidade <b style="color: red;">*</b></label>
+                        <input type="text" name="City-User" placeholder="Viamão" required>
+                    </div>
+
+                    <div class="Box-Entrada">
+                        <label for="Login-User">Login <b style="color: red;">*</b></label>
+                        <input type="text" name="City-User" placeholder="eu_sou Xampp" maxlength="21" required>
+                    </div>
+
+                    <div class="Box-Entrada">
+                        <label for="Senha-User">Senha <b style="color: red;">*</b></label>
+                        <input type="password" name="City-User" placeholder="senha-@123" maxlength="18" required>
+                    </div>
+
+                    <div class="Box-Buttons">
+                        <button type="submit">Inscrever-se</button>
+                        <button>
+                            <!-- Espera um tempo na troca de Páginas -->
+                            <!-- Voltar Página <a href="#" onclick="setTimeout(() => { window.location.href='../../index.html'; }, 100); return false;">Voltar</a> -->
+                            <a href="../../index.html" onclick="Transicao_Suave(event)">Voltar</a>
+                        </button>
+                    </div>
+
+                </fieldset>
+            </form>
+        </div>
+    </div>
+
+    <script src="../JS/Delay-Pages.js" defer></script>
+</body>
+
+</html>

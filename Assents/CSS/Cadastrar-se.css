@@ -1,0 +1,106 @@
+html,
+body {
+    overflow: hidden;
+}
+
+body {
+    transition: opacity 0.4s ease, transform 0.4s ease;
+}
+
+/* estado inicial invisível (entrada) */
+body.preload {
+    opacity: 0;
+    transform: translateX(50px);
+}
+
+/* estado carregado (aparece suavemente) */
+body.loaded {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+/* estado de saída (desaparece suavemente) */
+body.fade-out {
+    opacity: 0;
+    transform: translateX(-50px);
+}
+
+
+
+.Container {
+    background-image: url('../IMGs/Cadastrar-se.jpg');
+
+    .Div-Form {
+        width: 28%;
+        height: auto;
+        padding: 22px;
+        background-color: dodgerblue;
+        border-radius: 12px;
+
+        form {
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+
+            fieldset {
+                width: 100%;
+                height: auto;
+                border: 3px solid var(--Cor-Detalhes3);
+                padding: 16px;
+
+                legend {
+                    border: 1px solid var(--Cor-Detalhes3);
+                    padding: 12px;
+                    text-align: center;
+                    background-color: white;
+                    border-radius: 8px;
+                    color: var(--Cor-Detalhes);
+                }
+
+                /* Selecionando o input de data */
+                .Box-Entrada input[type="date"] {
+                    color: var(--Cor-Detalhes);
+                }
+
+                /* Estilizar ícones internos (setinhas e calendário) - Chrome, Safari, Edge */
+                input[type="date"]::-webkit-calendar-picker-indicator {
+                    background-color: transparent;
+                    /* Para deixar Registrado */
+                }
+
+                .Box-Entrada .Box-Select {
+                    width: 100%;
+                    display: flex;
+                    flex-direction: row;
+                    align-items: center;
+                    justify-content: start;
+                    gap: 22px;
+                }
+
+                /* Botões */
+                .Box-Buttons {
+
+                    button {
+
+                        a:hover {
+                            transform: scale(1.05);
+                            opacity: 0.97;
+                            cursor: pointer;
+                        }
+                    }
+
+                    button:nth-child(1) {
+                        color: white;
+                    }
+
+                    button:nth-child(2) {
+
+                        a {
+                            color: var(--Cor-Detalhes2);
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

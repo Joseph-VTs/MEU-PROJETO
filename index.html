@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema de Cadastro</title>
+
+    <!-- Font de Icones -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+
+    <!-- Estilos CSS -->
+    <link rel="stylesheet" href="Assents/CSS/index.css">
+    <link rel="stylesheet" href="Assents/CSS/PGs-Default.css">
+</head>
+
+<body class="preload">
+    <div class="Container">
+        <div class="Div-LE">
+            <div class="Div-img-Login">
+                <img src="Assents/IMGs/Login.jpg" alt="Div-img-Login">
+            </div>
+        </div>
+
+        <div class="Div-LD">
+            <header>
+                <h2>Seja Bem-Vindo!</h2>
+            </header>
+
+            <div class="Div-Body">
+                <div>
+                    <div class="Box-Entrada">
+                        <label for="User-Name">Nome</label>
+                        <input type="text" name="User-Name" placeholder="Meu Nome" required maxlength="50">
+                    </div>
+
+                    <div class="Box-Entrada">
+                        <label for="User-Password">Senha</label>
+                        <input type="password" name="User-Password" placeholder="*********" required maxlength="18">
+                    </div>
+                </div>
+
+                <div class="Box-Esqueceu">
+                    <a href="#">
+                        <p>Esqueceu a Senha?</p>
+                    </a>
+                </div>
+
+                <div class="Box-Buttons">
+                    <button><a href="#">Entrar</a></button>
+                    <button>
+                        <a href="Assents/HTML/Cadastrar-se.html"onclick="Transicao_Suave(event)">Inscrever-se</a>
+                    </button>
+                </div>
+            </div>
+
+            <footer>
+                <div>
+                    <p>Siga-nos</p>
+                </div>
+
+                <div>
+                    <a href="#" target="_blank"><i class="fa-brands fa-facebook-f" style="color: #4f5dfe;"></i></a>
+                    <a href="https://github.com/Joseph-VTs" target="_blank"><i class="fa-brands fa-github" style="color: #4f5dfe;"></i></a>
+                    <a href="https://www.instagram.com/dev.jvt_tech/" target="_blank"><i class="fa-brands fa-instagram" style="color: #4f5dfe;"></i></a>
+                </div>
+            </footer>
+
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="Assents/JS/Delay-Pages.js"></script>
+    <!-- <script src="Assents/Scripts/2- Metodo.js" defer></script> -->
+</body>
+
+</html>
